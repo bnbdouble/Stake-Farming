@@ -1,5 +1,7 @@
+https://bscscan.com/address/0x2598e82b214710fEaa04A7929d0cF6b4646B2C67
+
 /**
- *Submitted for verification at BscScan.com on 2021-12-01
+ *Submitted for verification at BscScan.com on 2021-12-03
 */
 
 /*   BNBDouble - is the new yield farm on Binance Smart Chain with a fixed and steady daily income of 5%!
@@ -24,7 +26,7 @@
  *   [INVESTMENT CONDITIONS]
  *
  *   - Minimal deposit: 0.05 BNB, no maximal limit
- *   - Total income: 5% daily, 40 days (200% total rewards)
+ *   - Total income: 7% daily, 30 days (210% total rewards)
  *   - Earnings every second, withdraw any time
  *
  *   [AFFILIATE PROGRAM]
@@ -33,8 +35,8 @@
  *
  *   [FUNDS DISTRIBUTION]
  *
- *   - 90%: platform main balance, using for participants payouts, affiliate program bonuses
- *   - 10%: advertising and promotion expenses, support work, technical functioning, administration fee
+ *   - 80%: platform main balance, using for participants payouts, affiliate program bonuses
+ *   - 20%: advertising and promotion expenses, support work, technical functioning, administration fee
  *
  *   Note: This is experimental community project,
  *   which means this project has high risks as well as high profits.
@@ -50,7 +52,7 @@ contract BNBDouble {
 	uint256 constant public INVEST_MIN_AMOUNT = 5e16; // 0.05 bnb
 	uint256[] public REFERRAL_PERCENTS = [80, 30, 20, 15, 5];
 	uint256 constant public TOTAL_REF = 150;
-	uint256 constant public PROJECT_FEE = 100;
+	uint256 constant public PROJECT_FEE = 200;
 	uint256 constant public PERCENTS_DIVIDER = 1000;
 	uint256 constant public TIME_STEP = 1 days;
 	
@@ -101,7 +103,7 @@ contract BNBDouble {
 		require(!isContract(wallet));
 		commissionWallet = wallet;
 
-        plans.push(Plan(40, 50));
+        plans.push(Plan(30, 70));
       
 	}
 
